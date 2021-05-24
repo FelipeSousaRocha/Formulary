@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.125rem;
+  }
+  
+
+header p{
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 1.875em;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    background-color: #555690;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125em;
+    margin-bottom: 0.5em;
+  }
+  
+  input,
+  button,
+  select,
+  textarea {
+    font-size: inherit;
+  }
+
+
+form{
+    
+    margin-top: 20px;
+    background-color: #252545;
+    padding: 2.5em 0.625em;
+    color: white;
+    border-radius: 0.25em;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    border: none;
+}
+
+/* Classes e Id's */
+
+.container {
+    width: 100%;
+    margin: 3em auto 0 auto; /* Alinhar ao centro */
+    margin-bottom: 40px;
+}
+
+.group{
+    margin: 0 auto 1.25em auto;
+    padding: 0.25em;
+}
+
+#namelabel{
+    display: block;
+}
+
+#submit-button:hover{
+    background-color: #099e3b;
+}
+
+.form-control {
+    display: block;
+    width: 100%; /* utiliza 100% do espaço*/
+    height: 2.375em;
+    padding: 0.375em 0.75em; /* alinha texto interno */
+    color: #868686;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25em;
+}
+
+.form-control:focus { /* dentro do formulario */
+    border-color: #80bdff;
+    outline: 0; /* elimina risco de dentro */
+    box-shadow: 0 0 0 0.2em #248C46;
+  }
+
+.input-radio,
+.input-checkbox {
+
+  margin-right: 0.625em;
+  min-height: 1.25em;
+  min-width: 1.25em;
+}
+
+#submit-button {
+    width: 100%;
+    padding: 0.75em;
+    background: #248C46;
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer; /* mostrar qye é botao */
+}
+
+#dropdown{
+    margin-top: 0.375em 0.75em;
+}
+
+#input-textarea {
+    min-height: 120px; /* altura minima */
+    width: 100%;
+    padding: 0.625em;
+}
+
+.clue {
+    margin-left: 0.25em;
+    font-size: 0.9em;
+    color: #e4e4e4;
+}
+
+/* resposividade */
+
+@media (min-width: 480px) {
+    form {
+      padding: 2.5em;
+    }
+  } 
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+ }
+}
+  
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+ }
+}
